@@ -58,7 +58,7 @@ describe "App" do
       visit '/login'
       fill_in "username", :with => "student1"
       fill_in "password", :with => "test"
-      
+       
       click_button "Log In"
       expect(page.current_path).to eq('/success')
       expect(page.status_code).to eq(200)
